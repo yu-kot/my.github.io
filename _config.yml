@@ -1,0 +1,20 @@
+title: AI by Yu_Kot
+email: contact@yu-kot.com
+description: >-
+  Експерименти з вайб-кодингу, Lovable.dev, Make.com та ШІ.
+baseurl: ""
+url: "https://ai.github.io"
+twitter_username: yu_kot
+github_username: yu-kot
+
+# Тема
+theme: minima
+
+# Плагіни
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Підтримка постів
+permalink: /:title/
