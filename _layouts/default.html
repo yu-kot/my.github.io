@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+    {% seo %}
+  </head>
+  <body>
+    <div class="container">
+      <!-- Меню як у GitBook -->
+      <aside class="sidebar">
+        <h3>🚀 {{ site.title }}</h3>
+        <nav>
+          <ul>
+            <li><a href="{{ '/' | relative_url }}">Головна</a></li>
+            <li><a href="{{ '/projects' | relative_url }}">Проекти</a></li>
+            <li><a href="{{ '/about' | relative_url }}">Про мене</a></li>
+            <li><a href="{{ '/contact' | relative_url }}">Контакти</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        {{ content }}
+      </main>
+    </div>
+  </body>
+</html>
